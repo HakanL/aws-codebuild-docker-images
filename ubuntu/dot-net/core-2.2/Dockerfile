@@ -97,9 +97,6 @@ RUN set -ex \
 
 VOLUME /var/lib/docker
 
-# Configure SSH
-COPY ssh_config /root/.ssh/config
-
 COPY dockerd-entrypoint.sh /usr/local/bin/
 
 # Install .NET CLI dependencies
